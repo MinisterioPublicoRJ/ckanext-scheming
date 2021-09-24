@@ -5,117 +5,117 @@ dataset_type: produtos
 dataset_fields:
 
 - field_name: title
-  label: Title
+  label: Nome do Produto
   preset: title
   form_placeholder: Nome do Produto
+  required: true
 
 - field_name: name
-  label: URL
+  label: URL CKAN
   preset: dataset_slug
   form_placeholder: eg. my-dataset
 
-- field_name: notes
-  label: Description
+- field_name: product_home_text
+  label: Texto do Produto na Home
   form_snippet: markdown.html
-  form_placeholder: eg. Descrição do produto
+  required: true
+
+- field_name: product_page_subtitle
+  label: Subtítulo na Página do Produto
+  form_snippet: markdown.html
+  required: true
+
+- field_name: product_page_description
+  label: Descrição na Página do Produto
+  form_snippet: markdown.html
+  required: true
+
+- field_name: product_thumbnail_description
+  label: Descrição da Thumbnail
+  form_snippet: markdown.html
+  required: true
 
 - field_name: owner_org
-  label: Organization
+  label: Parceiro
   preset: dataset_organization
+  required: true
   
-- field_name: url
-  label: Source
+- field_name: product_url
+  label: Link do Site do Produto
   form_placeholder: http://example.com/link_para_produto
   display_property: foaf:homepage
   display_snippet: link.html
   
 - field_name: service
-  label: Service
-  preset: title
+  label: Serviço Prestado
+  preset: markdown
   form_placeholder: Serviço prestado
+  required: true
 
 - field_name: subsection1_title
   label: Subsection 1 Title
-  preset: title
+  preset: markdown
   form_placeholder: Motivação da Plataforma
+  required: true
   
 - field_name: subsection1_description
   label: Description
   form_snippet: markdown.html
   form_placeholder: eg. Descrição da Motivação
-
-- field_name: subsection1_img
-  label: Photo
-  preset: resource_url_upload
-  form_placeholder: http://example.com/photo.jpg
-  upload_label: Photo
+  required: true
   
 - field_name: subsection2_title
-  label: Subsection 1 Title
-  preset: title
+  label: Subsection 2 Title
+  preset: markdown
   form_placeholder: O Produto
+  required: true
   
 - field_name: subsection2_description
   label: Description
   form_snippet: markdown.html
   form_placeholder: eg. Descrição do Produto
-
-- field_name: subsection2_img
-  label: Photo
-  preset: resource_url_upload
-  form_placeholder: http://example.com/photo.jpg
-  upload_label: Photo
+  required: true
   
 - field_name: subsection3_title
-  label: Subsection 1 Title
-  preset: title
+  label: Subsection 3 Title
+  preset: markdown
   form_placeholder: Os dados
+  required: true
   
 - field_name: subsection3_description
   label: Description
   form_snippet: markdown.html
   form_placeholder: eg. Descrição dos dados
-
-- field_name: subsection3_img
-  label: Photo
-  preset: resource_url_upload
-  form_placeholder: http://example.com/photo.jpg
-  upload_label: Photo
+  required: true
   
-- field_name: link_adicional_1
-  label: Source
+- field_name: links_adicionais
+  label: Lista de links adicionais
   form_placeholder: http://example.com/link_para_produto
-  display_property: foaf:homepage
-  display_snippet: link.html
-  
-- field_name: link_adicional_2
-  label: Source
-  form_placeholder: http://example.com/link_para_produto
-  display_property: foaf:homepage
-  display_snippet: link.html
-  
-- field_name: lista_de_links
-  label: Source
-  form_placeholder: http://example.com/link_para_produto
-  display_property: foaf:homepage
-  display_snippet: link.html
+  preset: multiple_text
 
 
 resource_fields:
 
-- field_name: url
-  label: URL
+- field_name: URL
+  label: Imagem
   preset: resource_url_upload
 
 - field_name: name
-  label: Name
-  form_placeholder: eg. January 2011 Gold Prices
-
-- field_name: description
-  label: Description
-  form_snippet: markdown.html
-  form_placeholder: Some useful notes about the data
-
-- field_name: format
-  label: Format
-  preset: resource_format_autocomplete
+  label: Categoria da Imagem
+  required: true
+  preset: select
+  choices:
+  - value: product_icon
+    label: Ícone do Produto
+  - value: product_banner
+    label: Banner Página de Produto
+  - value: subsection_1
+    label: Imagem da primeira subseção
+  - value: subsection_2
+    label: Imagem da segunda subseção
+  - value: subsection_3
+    label: Imagem da terceira subseção
+  - value: banner_home
+    label: Banner da Página Principal
+  - value: thumbnail
+    label: Thumbnail do Produto
