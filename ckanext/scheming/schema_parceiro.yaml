@@ -1,0 +1,72 @@
+scheming_version: 2
+dataset_type: paginaparceiro
+
+
+dataset_fields:
+
+- field_name: title
+  label: Nome de Exibição do Parceiro
+  preset: title
+  form_placeholder: Nome de Exibição do Parceiro
+  required: true
+
+- field_name: name
+  label: URL CKAN
+  preset: dataset_slug
+  form_placeholder: eg. my-dataset
+  
+- field_name: owner_org
+  label: Parceiro
+  preset: dataset_organization
+  required: true
+
+- field_name: titulo_pagina
+  label: Título na Página do Parceiro
+  required: true
+
+- field_name: subtitulo_pagina
+  label: Descrição na Página do Produto
+  form_snippet: markdown.html
+  required: true
+
+- field_name: quem_somos
+  label: Descrição da Thumbnail
+  form_snippet: markdown.html
+  required: true
+  
+- field_name: pilar_1
+  label: Texto do Pilar 1
+  form_snippet: markdown.html
+  required: true
+
+- field_name: pilar_2
+  label: Texto do Pilar 2
+  form_snippet: markdown.html
+  required: true
+
+- field_name: pilar_3
+  label: Texto do Pilar 3
+  form_snippet: markdown.html
+  required: true
+  
+- field_name: pilar_4
+  label: Texto do Pilar 4
+  form_snippet: markdown.html
+  required: true
+
+
+resource_fields:
+
+- field_name: URL
+  label: Imagem
+  preset: resource_url_upload
+
+- field_name: name
+  label: Categoria da Imagem
+  required: true
+  preset: select
+  choices:
+  - value: org_logo
+    label: Logo do Parceiro
+  - value: org_banner
+    label: Banner da Página do Parceiro
