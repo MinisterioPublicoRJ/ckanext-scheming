@@ -1,0 +1,71 @@
+cheming_version: 2
+dataset_type: repositorio
+
+
+dataset_fields:
+
+- field_name: title
+  label: Nome do Dataset
+  preset: title
+  form_placeholder: Nome do Dataset
+  required: true
+
+- field_name: name
+  label: URL CKAN
+  preset: dataset_slug
+  form_placeholder: eg. my-dataset
+
+- field_name: notes
+  label: Descrição do Dataset
+  form_snippet: markdown.html
+  required: true
+
+- field_name: owner_org
+  label: Setor Responsável
+  preset: dataset_organization
+  required: true
+                  
+- field_name: last_update
+  label: Atualização
+  preset: date
+  form_placeholder: Atualização
+  required: true
+                    
+- field_name: usage
+  label: Utilização
+  required: true
+
+- field_name: license_id
+  label: License
+  form_snippet: license.html
+  help_text: License definitions and additional information can be found at http://opendefinition.org/
+                  
+- field_name: score
+  label: Score
+  form_placeholder: 8.0
+                
+- field_name: external_link
+  label: Link Externo
+  form_placeholder: http://example.com/dataset.json
+  display_property: foaf:homepage
+  display_snippet: link.html
+
+
+resource_fields:
+
+- field_name: url
+  label: URL
+  preset: resource_url_upload
+
+- field_name: name
+  label: Name
+  form_placeholder: eg. January 2011 Gold Prices
+
+- field_name: description
+  label: Description
+  form_snippet: markdown.html
+  form_placeholder: Some useful notes about the data
+
+- field_name: format
+  label: Format
+  preset: resource_format_autocomplete
