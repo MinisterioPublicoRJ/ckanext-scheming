@@ -16,9 +16,8 @@ dataset_fields:
   form_placeholder: eg. my-dataset
 
 - field_name: product_home_text
-  label: Texto do Produto na Home
+  label: Texto do Produto na Home (se houver)
   form_snippet: markdown.html
-  required: true
 
 - field_name: product_page_subtitle
   label: Subtítulo na Página do Produto
@@ -53,37 +52,37 @@ dataset_fields:
   required: true
 
 - field_name: subsection1_title
-  label: Subsection 1 Title
+  label: Título da Subseção 1 (Por que)
   preset: markdown
   form_placeholder: Motivação da Plataforma
   required: true
   
 - field_name: subsection1_description
-  label: Description
+  label: Descrição da Subseção 1
   form_snippet: markdown.html
   form_placeholder: eg. Descrição da Motivação
   required: true
   
 - field_name: subsection2_title
-  label: Subsection 2 Title
+  label: Título da Subseção 2 (O Produto)
   preset: markdown
   form_placeholder: O Produto
   required: true
   
 - field_name: subsection2_description
-  label: Description
+  label: Descrição da Subseção 2
   form_snippet: markdown.html
   form_placeholder: eg. Descrição do Produto
   required: true
   
 - field_name: subsection3_title
-  label: Subsection 3 Title
+  label: Título da Subseção 3 (Os Dados)
   preset: markdown
   form_placeholder: Os dados
   required: true
   
 - field_name: subsection3_description
-  label: Description
+  label: Descrição da Subseção 3
   form_snippet: markdown.html
   form_placeholder: eg. Descrição dos dados
   required: true

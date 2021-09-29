@@ -25,18 +25,26 @@ dataset_fields:
   required: true
 
 - field_name: subtitulo_pagina
-  label: Descrição na Página do Produto
+  label: Subtítulo na Página do Parceiro
   form_snippet: markdown.html
   required: true
 
 - field_name: quem_somos
-  label: Descrição da Thumbnail
+  label: Quem Somos
   form_snippet: markdown.html
   required: true
   
+- field_name: pilar_1_titulo
+  label: Título do Pilar 1
+  required: true
+
 - field_name: pilar_1
   label: Texto do Pilar 1
   form_snippet: markdown.html
+  required: true
+
+- field_name: pilar_2_titulo
+  label: Título do Pilar 2
   required: true
 
 - field_name: pilar_2
@@ -44,15 +52,19 @@ dataset_fields:
   form_snippet: markdown.html
   required: true
 
+- field_name: pilar_3_titulo
+  label: Título do Pilar 3
+
 - field_name: pilar_3
   label: Texto do Pilar 3
   form_snippet: markdown.html
-  required: true
   
+- field_name: pilar_4_titulo
+  label: Título do Pilar 4
+
 - field_name: pilar_4
   label: Texto do Pilar 4
   form_snippet: markdown.html
-  required: true
   
 - field_name: ordem_aparecimento
   label: Ordem de Aparecimento nas Páginas (se houver)
