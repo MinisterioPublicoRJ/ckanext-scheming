@@ -53,7 +53,9 @@ dataset_fields:
   label: Texto do Pilar 4
   form_snippet: markdown.html
   required: true
-
+  
+- field_name: ordem_aparecimento
+  label: Ordem de Aparecimento nas Páginas (se houver)
 
 resource_fields:
 
@@ -70,3 +72,11 @@ resource_fields:
     label: Logo do Parceiro
   - value: org_banner
     label: Banner da Página do Parceiro
+  - value: img_pilar_1
+    label: Imagem de Pilar 1
+  - value: img_pilar_2
+    label: Imagem de Pilar 2
+  - value: img_pilar_3
+    label: Imagem de Pilar 3
+  - value: img_pilar_4
+    label: Imagem de Pilar 4
