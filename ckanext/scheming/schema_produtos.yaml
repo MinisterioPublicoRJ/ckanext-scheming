@@ -88,6 +88,9 @@ dataset_fields:
   form_placeholder: eg. Descrição dos dados
   required: true
   
+- field_name: ordem_aparecimento
+  label: Ordem de Aparecimento nas Páginas (se houver)
+  
 - field_name: links_adicionais
   label: Lista de links adicionais
   form_placeholder: http://example.com/link_para_produto
