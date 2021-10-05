@@ -24,20 +24,38 @@ dataset_fields:
   label: Setor Responsável
   preset: dataset_organization
   required: true
-                  
-- field_name: last_update
-  label: Atualização
-  preset: date
-  form_placeholder: Atualização
-  required: true
                     
 - field_name: usage
   label: Utilização
   required: true
 
-- field_name: license_id
-  label: License
-  form_snippet: license.html
+- field_name: license
+  label: Licença
+  required: true
+  preset: select
+  choices:
+  - value: non_specified
+    label: Licença não especificada
+  - value: mit
+    label: MIT
+  - value: cc-attr
+    label: Creative Commons Attribution
+  - value: cc-attr-sha
+    label: Creative Commons Attribution Share-Alike
+  - value: cc-ccz
+    label: Creative Commons CCZero
+  - value: cc-nc
+    label: Creative Commons Non-Commercial
+  - value: gnufreedoc
+    label: GNU Free Documentation License
+  - value: odca
+    label: Open Data Commons Attribution License
+  - value: odbl
+    label: Open Data Commons Open Database License (ODbL)
+  - value: pddl
+    label: Open Data Commons Public Domain Dedication and License (PDDL)
+  - value: other
+    label: Outra
   help_text: License definitions and additional information can be found at http://opendefinition.org/
                   
 - field_name: score

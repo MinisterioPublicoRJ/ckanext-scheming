@@ -15,6 +15,22 @@ dataset_fields:
   preset: dataset_slug
   form_placeholder: eg. my-dataset
 
+- field_name: product_category
+  label: Categoria do Produto
+  required: true
+  preset: select
+  choices:
+  - value: not_apply
+    label: Não se aplica
+  - value: painel
+    label: Painél
+  - value: relatorio
+    label: Relatório
+  - value: estudo
+    label: Estudo
+  - value: outro
+    label: Outro
+
 - field_name: product_home_text
   label: Texto do Produto na Home (se houver)
   form_snippet: markdown.html
