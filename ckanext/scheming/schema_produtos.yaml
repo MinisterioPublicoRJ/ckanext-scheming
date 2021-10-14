@@ -104,7 +104,10 @@ dataset_fields:
   required: true
   
 - field_name: ordem_aparecimento
-  label: Ordem de Aparecimento nas Páginas (se houver)
+  label: Ordem de Aparecimento na Home (se houver)
+
+- field_name: ordem_navbar
+  label: Ordem de Aparecimento na Navbar (se houver)
   
 - field_name: links_adicionais
   label: Lista de links adicionais
@@ -123,6 +126,8 @@ resource_fields:
   required: true
   preset: select
   choices:
+  - value: not_apply
+    label: Não se aplica
   - value: product_icon
     label: Ícone do Produto
   - value: product_banner

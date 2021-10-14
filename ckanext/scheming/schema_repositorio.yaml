@@ -58,7 +58,7 @@ dataset_fields:
     label: Outra
   help_text: License definitions and additional information can be found at http://opendefinition.org/
                   
-- field_name: score
+- field_name: score_dados
   label: Score
   form_placeholder: 8.0
                 
